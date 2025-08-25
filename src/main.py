@@ -1,4 +1,3 @@
+from game_main import startgame
 
-def main():
-    print("FNAF4")
-main()
+startgame()

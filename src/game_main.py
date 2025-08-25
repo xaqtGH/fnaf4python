@@ -1,13 +1,10 @@
-#tmp file
-import pygame
-import sys
+game_state = "menu"
 
-class GameMain:
-    def __init__(self):
-        pygame.init self.screen = pygame.display.set_mode((SCREEN_WIDDTH, SCREEN_HEIGHT))
-        self.states =
-        {   "menu": MenuState(self),
-            "play": PlayState(self),
-            "pause": PauseState(self),
-            "debug": DebugState(self),
-        }
+def startgame():
+    while True:
+        match game_state:
+            case "menu":
+                print("cool menu")
+
+            case _:
+                print("error: impossible game state")
