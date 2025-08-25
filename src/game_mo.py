@@ -10,6 +10,6 @@ def MovementOpportunity(animatronic):
         case MovementOpportunity(Bonnie):
             time.sleep(3)
             BonnieMORoll = random.randint(BonnieAI, 20)
-            
+
             if InFarLeftHall == True:
                 
