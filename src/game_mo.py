@@ -18,7 +18,7 @@ def doormove(animatronic): # Closing doors on animatronics sends most of them ba
             if InLeftHall == True and LeftHallIsFlashed == True:
                 jumpscare(bonnie)
 
-            if BonnieAttackPatience >= 0 and PlayerLocation == Bedroom:
+            if BonnieAttackPatience <= 0 and PlayerLocation == Bedroom:
                 jumpscare(bonnie)
 
         case doormove(chica): # Successfully blocking off Chica sends her back to the living room
@@ -30,7 +30,7 @@ def doormove(animatronic): # Closing doors on animatronics sends most of them ba
             if InRightHall == True and RightHallIsFlashed == True:
                 jumpscare(chica)
 
-            if ChicaAttackPatience >= 0 and PlayerLocation == Bedroom:
+            if ChicaAttackPatience <= 0 and PlayerLocation == Bedroom:
                 jumpscare(chica)
                 
 
